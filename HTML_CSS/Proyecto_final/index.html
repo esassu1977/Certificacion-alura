@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Proyecto Final</title>
+</head>
+<body class="body">
+   <header class="header"></header>
+    <main class="main">
+        <section class="main__seccion__uno">
+            <div class="main__seccion__uno__imagen">
+                <img class="main__seccion__uno__imagen_logo" src="assets/Logo.png" alt="Logo de Alura encabezando la página del proyecto fianl">
+            </div>            
+       
+            <div class="main__seccion__uno__textarea">
+                <textarea id="captura_texto" class="main__seccion__uno__textarea__captura"  placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="main__seccion__uno__advertencia">
+                <img class="main__seccion__uno__advertencia__imagen" src="assets/bi_exclamation-circle-fill.png">
+                <p class="main__seccion__uno__advertencia__texto">Solo letras minúsculas y sin acentos</p>            
+            </div>
+            <div class="main__seccion__uno__botonera">
+                <button onclick="eventEncriptar();" id="encriptar" class="main__seccion__uno__botonera__encripta">Encriptar</button>
+                <button onclick="eventDesencriptar();" id="desencriptar" class="main__seccion__uno__botonera__desencripta">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="main__seccion__dos">
+            <div class="main__seccion__dos__contenedor">
+                
+                <textarea id="muestra_texto" class = "main__seccion__dos__contenedor__textArea" cols="15" rows="8">
+                   
+                </textarea>
+                    
+                
+                <div class="main__seccion__dos__contenedor__elementos">
+                    <p id="texto1" class="main__seccion__dos__contenedor__elementos__texto1">
+                        Ningún mensaje fue encontrado
+                    </p>
+                    <p id="texto2" class="main__seccion__dos__contenedor__elementos__texto2">
+                        Ingresa el texto que desees encriptar o desencriptar.
+                    </p>
+                    <button onclick="copyTexto();" id="copiar" class="main__seccion__dos__contenedor__elementos__boton">Copiar</button>
+                </div>
+            </div>
+                
+        </section>
+       
+        
+
+    </main>
+<script src="encriptador.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+console.log('Bienvenido al curso de lógica en programación de Alura');
